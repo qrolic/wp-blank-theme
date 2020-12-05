@@ -1,0 +1,265 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Qrolic
+* Template Name : Demo
+* File          : Main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. Header css
+-------------------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/************************************/
+/***** 	   01. General css		 ****/
+/************************************/
+body {
+  font-size: 18px;
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+a:hover,
+a {
+  text-decoration: none;
+  outline: 0; }
+
+a:focus {
+  text-decoration: none;
+  outline: 0; }
+
+::-moz-selection {
+  background: #05cbfc;
+  color: #fff; }
+
+::selection {
+  background: #05cbfc;
+  color: #fff; }
+
+*, ::after, ::before {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+button:focus,
+input:focus,
+img:focus,
+.slick-slide:focus,
+textarea:focus,
+input:focus {
+  outline: none; }
+
+/************************************/
+/***** 	   02. Header css		 ****/
+/************************************/
+.header {
+  background: #fff;
+  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  -ms-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  -o-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04); }
+  .header__inner {
+    padding: 20px 50px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between; }
+    @media screen and (max-width: 991px) {
+      .header__inner {
+        padding: 20px; } }
+  .header__logo a, .header__logo img {
+    display: block; }
+  .header__logo img {
+    height: 50px; }
+    @media screen and (max-width: 991px) {
+      .header__logo img {
+        height: 40px; } }
+  @media screen and (max-width: 991px) {
+    .header__menu {
+      display: none; } }
+  .header__menu-icon {
+    display: none; }
+    @media screen and (max-width: 991px) {
+      .header__menu-icon {
+        display: block; } }
+    .header__menu-icon .menu-icon {
+      font-size: 22px;
+      color: #000;
+      cursor: pointer; }
+
+ul.menu {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  ul.menu a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 15px;
+    position: relative; }
+  ul.menu li {
+    position: relative;
+    padding: 10px 0px; }
+  ul.menu ul.sub-menu li {
+    margin-left: 0px !important;
+    width: 100%;
+    padding: 0px 15px; }
+  ul.menu ul.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 150%;
+    min-width: 200px;
+    text-align: left;
+    background-color: #fff;
+    z-index: 9999;
+    margin: 0px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+    -ms-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+    -o-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08); }
+    ul.menu ul.sub-menu a {
+      color: #000;
+      padding: 0px; }
+  ul.menu li.menu-item-has-children > a::after {
+    position: absolute;
+    content: "\f078";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    font-size: 12px;
+    right: 0;
+    top: 3px; }
+  ul.menu li.menu-item-has-children:hover > ul.sub-menu {
+    top: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    visibility: visible; }
+  @media screen and (max-width: 991px) {
+    ul.menu ul.sub-menu {
+      background-color: unset; }
+    ul.menu li.menu-item-has-children:hover > ul.sub-menu {
+      position: static; }
+    ul.menu ul.sub-menu li {
+      padding: 0px; } }
+
+.close-sidebar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none; }
+
+.close-sidebar.active {
+  display: block; }
+
+.sidebar.active {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px); }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  display: none;
+  -webkit-transform: translateX(-300px);
+  -moz-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  -o-transform: translateX(-300px);
+  transform: translateX(-300px);
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms; }
+  @media screen and (max-width: 991px) {
+    .sidebar {
+      display: block; } }
+  .sidebar__inner {
+    padding: 30px 20px; }
+  .sidebar__menu {
+    margin-top: 30px; }
+    .sidebar__menu a {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      display: block;
+      padding: 5px 0px;
+      -webkit-transition: all 500ms;
+      -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+      -o-transition: all 500ms;
+      transition: all 500ms; }
+      .sidebar__menu a:hover {
+        color: #000; }
+  .sidebar ul.menu {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column; }
+    .sidebar ul.menu li {
+      padding: 10px 0px; }
+    .sidebar ul.menu ul.sub-menu a {
+      padding: 0px 15px; }
+
+/*# sourceMappingURL=style.css.map */
