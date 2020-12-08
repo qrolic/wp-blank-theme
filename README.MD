@@ -32,7 +32,7 @@
 
 
 ## Home page 
-	```
+	
    	home.php  is homepage template 
 	make a template page like this
 	/* Template Name: Homepage */
